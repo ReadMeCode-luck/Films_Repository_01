@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'image_uploader_widget',
     'users.apps.UsersConfig',
-    'django.contrib.sites'
+    'django.contrib.sites',
+    'debug_toolbar'
 ]
 
 SITE_ID = 1
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 CSRF_FAILURE_VIEW = 'films.views.csrf_failure'
@@ -153,3 +155,12 @@ DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER')
 
 MEDIA_URL  = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+    'localhost',
+]
+
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TOOLBAR_CALLBACK': lambda request: request.path.startswith('/admin/'),
+}

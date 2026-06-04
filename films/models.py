@@ -4,21 +4,6 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.text import slugify
 from django.utils.safestring import mark_safe
 
-
-GENRE_CHOICES = [
-    ('Комедия', 'Комедия'),
-    ('Драма', 'Драма'),
-    ('Боевик', 'Боевик'),
-    ('Хоррор', 'Хоррор'),
-    ('Научная фантастика', 'Научная фантастика'),
-    ('Фэнтези', 'Фэнтези'),
-    ('Вестерн', 'Вестерн'),
-    ('Детектив', 'Детектив'),
-    ('Мюзикл', 'Мюзикл'),
-    ('Фильм-катастрофа', 'Фильм-катастрофа'),
-    ('Документальный', 'Документальный'),
-]
-
 COUNTRY_CHOICES = [
     ('Германия', 'Германия'),
     ('Китай', 'Китай'),

@@ -135,7 +135,6 @@
                 <a href="{% url 'films' %}" class="text-brand-textGray hover:text-white transition-colors">Фильмы</a>
                 <a href="{% url 'cartoons' %}" class="text-brand-textGray hover:text-white transition-colors">Мультфильмы</a>
                 <a href="{% url 'my_tickets' %}" class="text-brand-textGray hover:text-white transition-colors">Билеты</a>
-                <a href="#" class="text-brand-textGray hover:text-white transition-colors">О нас</a>
             </nav>
         </div>
 
@@ -577,17 +576,16 @@
             <div class="space-y-4 col-span-1 md:col-span-2">
                 <h3 class="font-heading font-black text-lg tracking-wider text-white">СИНЕМА <span class="text-brand-pink">СИТИ</span></h3>
                 <p class="text-sm text-brand-textGray max-w-sm leading-relaxed">
-                    Лучший онлайн-кинотеатр для поиска фильмов, сериалов и анимации. Удобный современный интерфейс, ежедневные новые релизы и тематические подборки.
+                    Лучший онлайн-кинотеатр для поиска фильмов и мультфильмов. Удобный современный интерфейс, ежедневные новые релизы и тематические подборки.
                 </p>
             </div>
 
             <div class="space-y-3">
                 <h4 class="text-xs font-bold uppercase tracking-widest text-brand-pink">Меню</h4>
                 <div class="grid grid-cols-1 gap-2 text-sm text-brand-textGray">
-                    <a href="#" class="hover:text-white transition-colors">О нас</a>
-                    <a href="#" class="hover:text-white transition-colors">Фильмы</a>
-                    <a href="#" class="hover:text-white transition-colors">Сериалы</a>
-                    <a href="#" class="hover:text-white transition-colors">Актеры</a>
+                    <a href="{% url 'films' %}" class="hover:text-white transition-colors">Фильмы</a>
+                    <a href="{% url 'cartoons' %}" class="hover:text-white transition-colors">Мультфильмы</a>
+                    <a href="{% url 'my_tickets' %}" class="hover:text-white transition-colors">Билеты</a>
                 </div>
             </div>
 
@@ -595,7 +593,6 @@
                 <h4 class="text-xs font-bold uppercase tracking-widest text-brand-pink">Поддержка</h4>
                 <div class="grid grid-cols-1 gap-2 text-sm text-brand-textGray">
                     <a href="#" class="hover:text-white transition-colors">FAQ</a>
-                    <a href="#" class="hover:text-white transition-colors">Помощь</a>
                     <a href="#" class="hover:text-white transition-colors">Условия использования</a>
                     <a href="#" class="hover:text-white transition-colors">Конфиденциальность</a>
                 </div>
